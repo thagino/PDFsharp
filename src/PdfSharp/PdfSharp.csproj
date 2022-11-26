@@ -58,6 +58,7 @@
     <Compile Include="Drawing.BarCodes\BarCode.cs" />
     <Compile Include="Drawing.BarCodes\BarCodeRenderInfo.cs" />
     <Compile Include="Drawing.BarCodes\BcgSR.cs" />
+    <Compile Include="Drawing.BarCodes\Codabar.cs" />
     <Compile Include="Drawing.BarCodes\Code2of5Interleaved.cs" />
     <Compile Include="Drawing.BarCodes\Code3of9Standard.cs" />
     <Compile Include="Drawing.BarCodes\CodeBase.cs" />

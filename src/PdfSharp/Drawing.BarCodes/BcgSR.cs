@@ -35,6 +35,11 @@ namespace PdfSharp.Drawing.BarCodes
     /// </summary>
     internal class BcgSR
     {
+        internal static string InvalidCodabar(string code)
+        {
+            return string.Format("Contains an valid character for codabar at index: {0}.", code);
+        }
+
         internal static string Invalid2Of5Code(string code)
         {
             return string.Format("'{0}' is not a valid code for an interleave 2 of 5 bar code. It can only represent an even number of digits.", code);
