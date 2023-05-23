@@ -71,6 +71,8 @@
     <Compile Include="Drawing.BarCodes\enums\DataMatrixEncoding.cs" />
     <Compile Include="Drawing.BarCodes\enums\MarkDistance.cs" />
     <Compile Include="Drawing.BarCodes\enums\TextLocation.cs" />
+    <Compile Include="Drawing.BarCodes\FourStateBarcodeRender.cs" />
+    <Compile Include="Drawing.BarCodes\JapanPostCB.cs" />
     <Compile Include="Drawing.BarCodes\MatrixCode.cs" />
     <Compile Include="Drawing.BarCodes\OmrData.cs" />
     <Compile Include="Drawing.BarCodes\ThickThinBarcodeRenderer.cs" />
