@@ -1,5 +1,5 @@
 # PDFsharp
-Implementation of Japan Post 4-state Barcode (Customer Barcode) for PDFsharp.
+Implementation of Japan Post 4-state Barcode (Customer Barcode) for PDFsharp.  
 PDFSharpに対する日本郵便カスタマーバーコードの実装
 
 # Resources
