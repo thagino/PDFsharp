@@ -30,6 +30,9 @@ using System;
 
 namespace PdfSharp.Drawing.BarCodes
 {
+    /// <summary>
+    /// Internal base class for 4-state Barcode
+    /// </summary>
     public abstract class FourStateBarcodeRender : BarCode
     {
         /// <summary>
@@ -107,12 +110,9 @@ namespace PdfSharp.Drawing.BarCodes
             }
         }
 
-        protected override void CheckCode(string text)
-        {
-            throw new NotImplementedException();
-        }
-
-        
+        /// <summary>
+        /// Renders the bar code.
+        /// </summary>
         protected internal override void Render(XGraphics gfx, XBrush brush, XFont font, XPoint position)
         {
             XGraphicsState state = gfx.Save();

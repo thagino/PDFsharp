@@ -40,6 +40,9 @@ using System.Text.RegularExpressions;
 
 namespace PdfSharp.Drawing.BarCodes
 {
+    /// <summary>
+    /// Imlpementation of the Japan Post 4-state Barcode (Customer Barcode)
+    /// </summary>
     public class JapanPostCB : FourStateBarcodeRender
     {
         /// <summary>
@@ -187,6 +190,7 @@ namespace PdfSharp.Drawing.BarCodes
 
             int multiple = (sum / 19) * 19 + 19;
             int chkdigit = multiple - sum;
+            if (chkdigit == 19) chkdigit = 0;
             return BARCODECHR[chkdigit];
         }
 
@@ -371,6 +375,11 @@ namespace PdfSharp.Drawing.BarCodes
             return target.Trim('-');
         }
 
+        /// <summary>
+        /// Check this code for printability.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         protected override void CheckCode(string text)
         {
             if (text == null)
